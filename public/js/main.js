@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="/science">
           <div class="navbar-item" id="games">
             <i class="fa-regular fa-gamepad"></i>
-            <span>Games</span>
+            <span>Science</span>
           </div>
         </a>
         <a href="/math">
