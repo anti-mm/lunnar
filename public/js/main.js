@@ -121,10 +121,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <span>Apps</span>
           </div>
         </a>
-        <a href="/forum">
-          <div class="navbar-item" id="forum">
+        <a href="/tutorial">
+          <div class="navbar-item" id="tutorial">
             <i class="fa-solid fa-comment"></i>
-            <span>Forum</span>
+            <span>Tutorial(bydogecraft)</span>
           </div>
         </a>
         <a href="/settings">
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		"": "home",
 		math: "apps",
 		science: "games",
-		forum: "forum",
+		tutorial: "forum",
 		settings: "settings",
 	};
 

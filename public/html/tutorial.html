@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullscreen Autoplay Web Player</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #000;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <video id="autoplay-video" autoplay loop playsinline>
+    <source src="../media/tutorial.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    window.addEventListener("load", () => {
+      const videoElement = document.getElementById("autoplay-video");
+
+      // Request fullscreen when the video loads
+      if (videoElement.requestFullscreen) {
+        videoElement.requestFullscreen();
+      } else if (videoElement.webkitRequestFullscreen) { // Safari compatibility
+        videoElement.webkitRequestFullscreen();
+      } else if (videoElement.msRequestFullscreen) { // IE compatibility
+        videoElement.msRequestFullscreen();
+      }
+
+      // Ensure the video plays with audio
+      videoElement.play().catch((error) => {
+        console.error("Video playback failed:", error);
+      });
+    });
+  </script>
+</body>
+</html>
