@@ -35,6 +35,23 @@ body[theme="audi"] button,
 body[theme="audi"] input {
   font-family: "audi" !important;
 }
+
+body[theme="Labron James"] {
+  --bg: #44281b;
+  --button: #8d4220;
+  --logo: #8d4220;
+  --alt: #8d4220;
+  --textcolor: #fff;
+  --border: var(--button);
+}
+body[theme="SunshineLabron James"] {
+  --bg: #ffffff;
+  --button: #7c7c7c;
+  --logo: #7c7c7c;
+  --alt: #7c7c7c;
+  --textcolor: #272727;
+  --border: var(--button);
+}
 body[theme="new"] {
   --background-filter: blur(3px) brightness(80%);
   --textcolor: #fff;

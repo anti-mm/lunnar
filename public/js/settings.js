@@ -71,6 +71,15 @@ bgimgselect.addEventListener("change", () => {
     case "windowsdark":
       changeBackground("/./media/wallpapers/windowsdark.webp", "windowsdark");
       break;
+      case "Landscape":
+      changeBackground("/./media/wallpapers/landscape1.jpg", "landscape");
+      break;
+      case "labronyboo":
+      changeBackground("/./media/wallpapers/labronyboo.png", "labronyboo");
+      break;
+      case "SunshineLabron James":
+      changeBackground("/./media/wallpapers/you are mysunshine.gif", "SunshineLabron James");
+      break;
   }
 });
 
