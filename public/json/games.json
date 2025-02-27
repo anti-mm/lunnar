@@ -563,7 +563,8 @@
     "name": "CS:GO Clicker",
     "image": "images/case1.png",
     "url": "csgo-clicker",
-    "new": false
+    "new": false,
+    "old": true
   },
   {
     "name": "CTR",

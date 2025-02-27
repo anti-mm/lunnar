@@ -61,6 +61,9 @@ function displayGames(games) {
 			if (game.exp) {
 				alert("this game is experimental 🧪");
 			}
+			if (game.old) {
+				alert("There is a new version, please move over as this version will be removed soon");
+			}
 		});
 
 		gamesContainer.appendChild(gameDiv);
